@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elon Musk | Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 1s ease; }
+  </style>
+</head>
+
+<body class="bg-black text-gray-300">
+
+  <!-- NAVBAR -->
+  <header class="bg-black/70 border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-5 px-4">
+      <h1 class="text-2xl font-bold text-white">Elon Musk</h1>
+      <nav class="hidden md:flex gap-6 font-semibold">
+        <a href="#companies" class="hover:text-cyan-400 transition">Companies</a>
+        <a href="#facts" class="hover:text-cyan-400 transition">Facts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto mt-7 rounded-xl bg-neutral-900 grid md:grid-cols-2 overflow-hidden fade-up">
+    <img src="elon.jpg" alt="Elon Musk" class="object-cover h-[380px] w-full"/>
+    <div class="p-8 flex flex-col justify-center gap-3">
+      <h2 class="text-3xl text-cyan-400 font-bold">Engineering the Future of Earth & Space</h2>
+      <p class="text-lg">Entrepreneur • Inventor • Innovator</p>
+    </div>
+  </section>
+
+  <!-- COMPANIES -->
+  <section id="companies" class="max-w-6xl mx-auto p-6 fade-up">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">Companies</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="bg-neutral-900 border border-gray-700 rounded-xl p-5 text-sm hover:-translate-y-2 hover:border-cyan-400 transition shadow">🚀 <b>SpaceX</b> — Rockets & Mars Mission</div>
+      <div class="bg-neutral-900 border border-gray-700 rounded-xl p-5 text-sm hover:-translate-y-2 hover:border-cyan-400 transition shadow">🔋 <b>Tesla</b> — Electric Vehicles & Energy</div>
+      <div class="bg-neutral-900 border border-gray-700 rounded-xl p-5 text-sm hover:-translate-y-2 hover:border-cyan-400 transition shadow">🧠 <b>Neuralink</b> — Brain-Computer Interface</div>
+      <div class="bg-neutral-900 border border-gray-700 rounded-xl p-5 text-sm hover:-translate-y-2 hover:border-cyan-400 transition shadow">🚇 <b>Boring Company</b> — Tunnel Transport</div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section id="facts" class="max-w-6xl mx-auto p-6 fade-up">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">Quick Facts</h2>
+    <ul class="space-y-2 text-lg">
+      <li>Believes in first-principles thinking</li>
+      <li>Vision: Make humanity multi-planetary</li>
+      <li>Interests: Space • AI • Electric Vehicles • Energy • Tech</li>
+      <li>Born in South Africa | Physics & Economics</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-500 border-t border-gray-700 mt-10">
+    Built using <span class="text-cyan-400 font-bold">TailwindCSS + Grid + Flex + Animations</span>
+  </footer>
+
+</body>
+</html>
+  

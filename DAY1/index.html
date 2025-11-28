@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mark Zuckerberg | Portfolio</title>
+
+<style>
+  /* Global Styling */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #0d1b2a;
+    color: #e0e5eb;
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    position: fixed;
+    top: 0;
+    background: rgba(9, 31, 51, 0.8);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+  }
+
+  header h2 {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: #78a9ff;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #dce5f6;
+    margin-left: 28px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #78a9ff;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 70px 70px;
+  }
+
+  .hero img {
+    width: 360px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(120, 169, 255, 0.6);
+    animation: float 4s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+  }
+
+  .hero-text {
+    max-width: 600px;
+    animation: fadeIn 1.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    color: #78a9ff;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #c6d3e5;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #d7e2f2;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #78a9ff;
+    color: #051a30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 15px #78a9ff;
+    transform: scale(1.05);
+  }
+
+  /* Sections */
+  section {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 40px;
+    background: #12263a;
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(120, 169, 255, 0.12);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #78a9ff;
+  }
+
+  /* Skills */
+  .skills span {
+    display: inline-block;
+    background: #20364f;
+    padding: 8px 14px;
+    border-radius: 25px;
+    margin: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .skills span:hover {
+    background: #78a9ff;
+    color: #051a30;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: collapse;
+    color: #d7e2f2;
+    font-size: 0.95rem;
+  }
+
+  table th, table td {
+    border: 1px solid #34506b;
+    padding: 12px;
+    text-align: left;
+  }
+
+  table th {
+    background: #20364f;
+    color: #78a9ff;
+  }
+
+  table tr:hover {
+    background: rgba(120, 169, 255, 0.15);
+  }
+
+  /* Contact Form */
+  form label {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.95rem;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 6px;
+    background: #20364f;
+    color: #e0e5eb;
+  }
+
+  form button {
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #78a9ff;
+    border: none;
+    border-radius: 6px;
+    color: #051a30;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+
+  form button:hover {
+    box-shadow: 0 0 15px #78a9ff;
+    transform: scale(1.05);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    color: #7894b3;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Mark Zuckerberg</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Mark Zuckerberg</h1>
+    <h2>Co-Founder & CEO of Meta (Facebook)</h2>
+    <p>
+      I build products that bring people together through technology —
+      from social connections to the future of augmented and virtual reality.
+      My mission is to connect the world.
+    </p>
+    <a href="#projects" class="btn">View Work</a>
+  </div>
+
+  <img src="mark.jpg" alt="Mark Zuckerberg" />
+</section>
+
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Mark Zuckerberg is a technology entrepreneur and software developer best
+    known for founding Facebook in 2004. Today, as CEO of Meta Platforms,
+    he is leading the development of next-generation communication platforms
+    and immersive metaverse experiences.
+  </p>
+</section>
+
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Leadership</span> <span>Product Strategy</span> <span>Software Development</span>
+    <span>Social Media Innovation</span> <span>AR / VR</span> <span>Public Speaking</span>
+    <span>Team Building</span>
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Major Projects</h2>
+
+  <table>
+    <tr>
+      <th>Project</th>
+      <th>Category</th>
+      <th>Impact</th>
+    </tr>
+    <tr>
+      <td>Facebook</td>
+      <td>Social Platform</td>
+      <td>3 Billion Active Users</td>
+    </tr>
+    <tr>
+      <td>Instagram</td>
+      <td>Photo & Video Network</td>
+      <td>Influencer & Business Hub</td>
+    </tr>
+    <tr>
+      <td>Meta Quest VR</td>
+      <td>Virtual Reality</td>
+      <td>Immersive Digital Experience</td>
+    </tr>
+    <tr>
+      <td>WhatsApp</td>
+      <td>Messaging</td>
+      <td>End-to-End Encrypted Chats</td>
+    </tr>
+  </table>
+</section>
+
+
+<section id="contact">
+  <h2>Send a Message to Mark</h2>
+
+  <form>
+    <label>Your Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Message:</label>
+    <textarea rows="5" placeholder="Write your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<footer>
+  © 2025 Mark Zuckerberg Portfolio (Demo for HTML Project)
+</footer>
+
+</body>
+</html>
